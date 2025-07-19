@@ -1,0 +1,96 @@
+package com.pack4;
+
+public class TrainTic {
+	void meth1() {
+		System.out.println("Wclcome to Indian Rail");
+		System.out.println("Please Select Which Ticket You Want ");
+		System.out.println("1.Second Class");
+		System.out.println("2. Slipper");
+		System.out.println("3. 2Tier AC");
+		System.out.println("4. 3Tier Ac");
+		
+	
+		
+		System.out.println("Enter Your Choise ");
+		int choise = 3;
+		System.out.println("your choice ="+choise);
+		int age=81;
+		
+		switch(choise) {
+		
+		case 1:
+			System.out.println("Second Class ");
+			if(age<5) {
+				System.out.println("Travel Free");
+			}
+			else if  (age<5 && age<60) {
+					System.out.println("You Need To pay Rs.120");
+				}
+			else {
+				System.out.println("You get 20% discount");
+			}
+			
+		case 2:
+			System.out.println("Slipper");
+			System.out.println("Enter Your Age");
+			System.out.println("Your age="+age);
+			if(age<5) {
+				System.out.println("Travel Free");
+			}
+			else if  (age<5 && age<60) {
+					System.out.println("You Need To pay Rs.250");
+				}
+			else {
+				System.out.println("You get 10% discount");
+				break;
+				
+			}
+		
+		case 3:
+			System.out.println("2 Tier AC");
+			System.out.println("Ticket Price = Rs.470 ");
+			if(age>60) {
+				System.out.println("Your age ="+age);
+				System.out.println("You Get 20% discount");
+			}
+		
+			
+			break;
+			
+			
+			
+			
+		case 4 :
+			System.out.println("3 Tier AC");
+			System.out.println("Ticket Price = Rs.470 ");
+			System.out.println("Which Sit You Want");
+			System.out.println("1.Lower 2.Upper");
+			
+			int a=2;
+			System.out.println("your choise ="+a);
+			switch (a) {
+			case 1:
+				System.out.println("Lower Sit");
+				break;
+			
+			case 2:
+				System.out.println("Upper sit");
+				break;
+				
+			default :
+				System.out.println("Middle sit");
+			
+			}
+			}
+			
+		
+		}
+	
+	
+
+	public static void main(String[] args) {
+		
+		new TrainTic().meth1();
+	}
+
+}
